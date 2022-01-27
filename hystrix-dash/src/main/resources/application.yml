@@ -1,0 +1,13 @@
+server:
+   port: 8181
+
+
+spring:
+   application:
+      name: hystrix-dashboard
+ 
+                      
+hystrix:
+   dashboard:
+      proxy-stream-allow-list: "*"
+      

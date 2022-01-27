@@ -1,0 +1,20 @@
+server:
+   port: 8002
+
+spring:
+   application:
+      name: customer-service
+   
+   datasource:
+      driverClassName: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/customerservice
+      username: root
+      password: 12345678
+   jpa:
+      properties:
+         hibernate:
+            dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+      hibernate:
+         ddl-auto: update
+      generate-ddl: true
+      show-sql: true
